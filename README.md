@@ -1,6 +1,7 @@
 # 🕵️‍♂️ Ethernaut Solutions
 
 My journey through the [OpenZeppelin Ethernaut](https://ethernaut.openzeppelin.com/) wargame using **Foundry**. This repo documents the scripts and strategies used to identify and exploit smart contract vulnerabilities.
+All the solutions have comments explaining my approach !
 
 ## 🛠 Tech Stack
 - **Framework:** Foundry (Forge, Cast)
