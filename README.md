@@ -1,66 +1,34 @@
-## Foundry
+# 🕵️‍♂️ Ethernaut Solutions
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+My journey through the [OpenZeppelin Ethernaut](https://ethernaut.openzeppelin.com/) wargame using **Foundry**. This repo documents the scripts and strategies used to identify and exploit smart contract vulnerabilities.
 
-Foundry consists of:
+## 🛠 Tech Stack
+- **Framework:** Foundry (Forge, Cast)
+- **Language:** Solidity
+- **Network:** Sepolia
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+---
 
-## Documentation
+## 📊 Level Progress
 
-https://book.getfoundry.sh/
+| # | Level | Status | Key Focus |
+|---|---|:---:|---|
+| 00 | Hello Ethernaut | ✅ | Contract Interaction |
+| 01 | Fallback | ⏳ | Access Control |
+| 02 | Fallout | ⏳ | Constructor Security |
+| 03 | Coin Flip | ⏳ | Randomness |
+| 04 | Telephone | ⏳ | tx.origin |
 
-## Usage
+---
 
-### Build
+## 📂 Project Structure
+- **/src**: The target contracts for each level.
+- **/script**: Foundry scripts containing the exploit/solution logic.
+- **/test**: Local tests to verify solutions before on-chain execution.
 
-```shell
-$ forge build
-```
+---
 
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## 🚀 Quick Run
+To run a solution:
+```bash
+forge script script/level_0_solution.s.sol --rpc-url $RPC_URL --env-file .env -vvvv
