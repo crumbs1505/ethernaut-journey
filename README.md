@@ -24,8 +24,6 @@ My journey through the [OpenZeppelin Ethernaut](https://ethernaut.openzeppelin.c
 ## 📂 Project Structure
 - **/src**: The target contracts for each level.
 - **/script**: Foundry scripts containing the exploit/solution logic.
-- **/test**: Local tests to verify solutions before on-chain execution.
-
 ---
 
 ## 🚀 Quick Run
