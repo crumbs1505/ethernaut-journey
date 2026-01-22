@@ -8,19 +8,6 @@ My journey through the [OpenZeppelin Ethernaut](https://ethernaut.openzeppelin.c
 - **Network:** Sepolia
 
 ---
-
-## 📊 Level Progress
-
-| # | Level | Status | Key Focus |
-|---|---|:---:|---|
-| 00 | Hello Ethernaut | ✅ | Contract Interaction |
-| 01 | Fallback | ⏳ | Access Control |
-| 02 | Fallout | ⏳ | Constructor Security |
-| 03 | Coin Flip | ⏳ | Randomness |
-| 04 | Telephone | ⏳ | tx.origin |
-
----
-
 ## 📂 Project Structure
 - **/src**: The target contracts for each level.
 - **/script**: Foundry scripts containing the exploit/solution logic.
